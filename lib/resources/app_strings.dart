@@ -13,7 +13,11 @@ class AppStrings{
   static const homeCtaAlbum = 'Discover an album';
   static const homeCtaPost = 'Discover a post';
 
+  /// ----- Album Screen -----
+  static const albumNewPostPickPhoto = 'Pick from Gallery';
+  static const albumNewPostTakePhoto = 'Take with Camera';
+
   /// ----- General -----
-  static const mobileNumber = 'MobileNumber';
+  static const cancel = 'Cancel';
 
 }

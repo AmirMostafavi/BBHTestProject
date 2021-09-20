@@ -25,4 +25,10 @@ abstract class AppStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static TextStyle popupTitleTextStyle = TextStyle(
+    color: CupertinoColors.black,
+    fontSize: AppSizes.fontSizeMedium,
+    fontWeight: FontWeight.w400,
+  );
+
 }

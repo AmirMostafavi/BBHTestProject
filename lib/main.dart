@@ -1,3 +1,5 @@
+import 'package:bbh_test_app/album_screen.dart';
+import 'package:bbh_test_app/post_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -22,9 +24,16 @@ class BBHTestApp extends StatelessWidget {
         [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
     /// --- App ---
-    return const CupertinoApp(
+    return CupertinoApp(
       title: AppStrings.appName,
-      home: HomeScreen(title: 'Flutter Demo Home Page'),
+
+      /// ----- Routes -----
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/album-screen': (context) => const AlbumScreen(),
+        '/post-screen': (context) => const PostScreen(),
+      },
     );
   }
 }

@@ -7,14 +7,14 @@ import 'resources/app_colors.dart';
 import 'resources/app_styles.dart';
 import 'utils/size_utils.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class PostScreen extends StatefulWidget {
+  const PostScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<PostScreen> createState() => _PostScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _PostScreenState extends State<PostScreen> {
 
   /// ----- Widget Lifecycle -----
   @override
@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       text: AppStrings.homeCtaAlbum,
                       onPressed: (){
                         /// Navigate to AlbumListScreen
-                        Navigator.pushNamed(context, '/album-screen');
+                        Navigator.pushNamed(context, '/album-list');
                       },
                     ),
 
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       text: AppStrings.homeCtaPost,
                       onPressed: (){
                         /// Navigate to PostListScreen
-                        Navigator.pushNamed(context, '/post-screen');
+                        Navigator.pushNamed(context, '/post-list');
                       },
                     ),
                   ],
