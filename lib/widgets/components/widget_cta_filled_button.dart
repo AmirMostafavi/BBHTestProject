@@ -16,7 +16,7 @@ class CtaFilledButtonWidget extends StatelessWidget {
   final String text;
   final dynamic onPressed;
   final bool buttonActivateStatus;
-  final Color fillColor = AppColors.defaultAccentColor;
+  final Color fillColor = AppColors.accentColor;
   final bool isLoading;
 
   @override

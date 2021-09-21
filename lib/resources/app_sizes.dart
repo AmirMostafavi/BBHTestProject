@@ -15,13 +15,4 @@ class AppSizes {
   static double fontSizeHigh = SizeUtils.safeBlockHorizontal * 8;
   static double fontSizeMega = SizeUtils.safeBlockHorizontal * 20;
 
-  /// ----- Date Header -----
-
-  static double dateHeaderIndicatorBigHeight = SizeUtils.safeBlockHorizontal * 8.8;
-  static double dateHeaderIndicatorNormalHeight = SizeUtils.safeBlockHorizontal * 6.8;
-
-  /// ----- Icon Size -----
-
-  static double icon = SizeUtils.safeBlockHorizontal * 6.8;
-
 }

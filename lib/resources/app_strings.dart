@@ -17,6 +17,9 @@ class AppStrings{
   static const albumNewPostPickPhoto = 'Pick from Gallery';
   static const albumNewPostTakePhoto = 'Take with Camera';
 
+  /// ----- Post Screen -----
+  static const postMakeNewComment = 'Lets make a new comment';
+
   /// ----- General -----
   static const cancel = 'Cancel';
 

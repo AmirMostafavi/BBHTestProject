@@ -27,7 +27,37 @@ abstract class AppStyles {
 
   static TextStyle popupTitleTextStyle = TextStyle(
     color: CupertinoColors.black,
-    fontSize: AppSizes.fontSizeMedium,
+    fontSize: AppSizes.fontSizeRegular,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle popupButtonTextStyle = TextStyle(
+    color: CupertinoColors.black,
+    fontSize: AppSizes.fontSizeRegular,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle postTitleTextStyle = TextStyle(
+    color: CupertinoColors.white,
+    fontSize: AppSizes.fontSizeSmall,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle postBodyTextStyle = TextStyle(
+    color: CupertinoColors.white,
+    fontSize: AppSizes.fontSizeSmall,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle postCommentTextStyle = TextStyle(
+    color: CupertinoColors.white,
+    fontSize: AppSizes.fontSizeSmall,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle postCommentEmailTextStyle = TextStyle(
+    color: CupertinoColors.systemGrey,
+    fontSize: AppSizes.fontSizeSmall,
     fontWeight: FontWeight.w400,
   );
 
