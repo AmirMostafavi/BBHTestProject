@@ -1,19 +1,13 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bbh_test_app/bloc/album_bloc.dart';
 import 'package:bbh_test_app/bloc/bloc_provider.dart';
 import 'package:bbh_test_app/bloc/post_bloc.dart';
 import 'package:bbh_test_app/models/comment.dart';
-import 'package:bbh_test_app/models/photo.dart';
 import 'package:bbh_test_app/models/post.dart';
 import 'package:bbh_test_app/resources/app_strings.dart';
-import 'package:bbh_test_app/widgets/components/widget_cta_filled_button.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
-import 'package:image_picker/image_picker.dart';
 
 import '../../resources/app_colors.dart';
 import '../../resources/app_styles.dart';
@@ -70,7 +64,8 @@ class _PostScreenState extends State<PostScreen> {
                 height: SizeUtils.safeBlockVertical * 7,
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                      vertical: SizeUtils.safeBlockVertical * 1),
+                      vertical: SizeUtils.safeBlockVertical * 1,
+                  ),
                   child: Stack(
                     children: [
                       /// --- Button : Back ---
@@ -183,7 +178,7 @@ class _PostScreenState extends State<PostScreen> {
                                     return Container();
                                   }
 
-                                  /// Build Photo item row
+                                  /// Build Comment item row
                                   return _buildCommentRow(
                                       context, _commentsList[index]);
                                 },

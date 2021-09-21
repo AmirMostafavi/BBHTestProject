@@ -1,4 +1,3 @@
-import 'package:bbh_test_app/bloc/bloc_provider.dart';
 import 'package:bbh_test_app/widgets/screens/album_screen.dart';
 import 'package:bbh_test_app/widgets/screens/post_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,7 +6,6 @@ import 'package:flutter/services.dart';
 
 import 'widgets/screens/home_screen.dart';
 import 'resources/app_strings.dart';
-import 'utils/size_utils.dart';
 
 void main() {
   runApp(const BBHTestApp());

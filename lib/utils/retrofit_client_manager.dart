@@ -10,7 +10,6 @@ part 'retrofit_client_manager.g.dart';
 
 class RestClientManager {
   static RetrofitRestClient? _retrofitRestClient;
-  static Dio? clientDio;
 
   static const apiEndpointUrl = "https://jsonplaceholder.typicode.com";
 
@@ -31,9 +30,6 @@ class RestClientManager {
           receiveTimeout: 10 * 1000);
       dio.options = customizedDioBaseOptions;
     }
-
-    /// Set Dio static variable
-    clientDio = dio;
 
     /// Create Retrofit Rest Client
     _retrofitRestClient = RetrofitRestClient(dio);
